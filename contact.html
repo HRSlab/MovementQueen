@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Booking | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-100 font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Blog</a></li>
+                <li><a href="contact.html" class="text-navy-900 font-semibold">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === PAGE HEADER === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-navy-900">Ready to Begin Your Transformation?</h1>
+                    <p class="mt-4 text-lg text-brand-gray-700">The first step is a complimentary discovery call. Send a message using the form, or book a time directly from the calendar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- === CONTACT & BOOKING SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Form -->
+                    <div>
+                        <h2 class="font-serif text-3xl font-bold text-navy-900">Send a Message</h2>
+                        <form id="contact-form" class="mt-6 space-y-6">
+                            <div>
+                                <label for="form-name" class="block text-sm font-semibold text-brand-gray-700">Full Name</label>
+                                <input type="text" id="form-name" placeholder="Jane Doe" required class="mt-1 block w-full px-4 py-3 bg-white border border-brand-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-navy-800 focus:border-navy-800">
+                            </div>
+                            <div>
+                                <label for="form-email" class="block text-sm font-semibold text-brand-gray-700">Email Address</label>
+                                <input type="email" id="form-email" placeholder="jane.doe@example.com" required class="mt-1 block w-full px-4 py-3 bg-white border border-brand-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-navy-800 focus:border-navy-800">
+                            </div>
+                            <div>
+                                <label for="form-message" class="block text-sm font-semibold text-brand-gray-700">Tell me a little about what you're looking for...</label>
+                                <textarea id="form-message" rows="4" placeholder="Describe your goals or challenges" class="mt-1 block w-full px-4 py-3 bg-white border border-brand-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-navy-800 focus:border-navy-800"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-navy-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Send Message & Request Call</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Calendar -->
+                    <div>
+                        <h2 class="font-serif text-3xl font-bold text-navy-900">Or, Book Directly</h2>
+                        <div id="calendar-container" class="mt-6 bg-white p-6 rounded-xl shadow-sm border border-brand-gray-200/80">
+                           <!-- Calendar will be generated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === TRAINERIZE APP SECTION === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                    <div class="md:col-span-1">
+                        <img src="https://placehold.co/300x300/e9ecef/212529?text=Trainerize" alt="Trainerize App Logo" class="w-40 h-40 mx-auto rounded-full shadow-lg">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h2 class="font-serif text-3xl font-bold text-navy-900">Your Personalized Plan, Delivered.</h2>
+                        <p class="mt-4 text-brand-gray-700">I use the industry-leading Trainerize app to deliver your personalized movement programs, track your progress, and provide direct support. It’s like having a coach in your pocket, keeping you accountable and motivated every step of the way.</p>
+                        <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                            <a href="https://www.trainerize.com/apple-app-store" target="_blank" class="inline-block bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19.333 12.494c0 .012-.008.024-.008.036-.032 2.603-2.208 4.092-2.208 4.092s-1.12 1.583-2.932 1.543c-1.805-.04-2.316-.948-3.72-.948-1.404 0-2.02.948-3.708.936-1.805-.012-3.092-1.611-3.092-1.611s-2.368-1.745-2.368-4.66c0-2.882 1.748-4.324 3.42-4.324 1.748 0 2.652 1.02 4.128 1.02s2.16-1.02 3.864-1.02c1.02 0 2.556.78 3.284 2.112a4.467 4.467 0 0 1 .14 1.746zm-6.14-7.53c.888-.047 1.764.553 2.328 1.294-.78.636-1.848 1.02-3.024 1.02-1.164 0-2.22-.42-2.976-1.032.588-1.008 1.692-1.416 2.672-1.282z"></path></svg>
+                                    <span>App Store</span>
+                                </span>
+                            </a>
+                             <a href="https://www.trainerize.com/google-play-store" target="_blank" class="inline-block bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors">
+                                <span class="flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M21.533 11.235l-9.13-9.13c-.235-.235-.613-.235-.848 0l-9.13 9.13c-.235.235-.235.613 0 .848l9.13 9.13c.235.235.613.235.848 0l9.13-9.13c.235-.235.235-.613 0-.848zm-11.45 6.273l-4.59-2.658 6.726-3.882 2.126 2.126-4.262 4.414zm.64-1.278l4.26-4.41-2.123-2.125-6.726 3.883 4.59 2.652zm-.002-8.406l4.588 2.65-4.588 2.65-4.588-2.65 4.588-2.65z"></path></svg>
+                                    <span>Google Play</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarContainer = document.getElementById('calendar-container');
+            let currentDate = new Date();
+            let selectedDate = null;
+            let selectedTime = null;
+
+            // Mock availability: Available on weekdays (1-5)
+            const availableTimes = {
+                1: ["09:00 AM", "11:00 AM", "02:00 PM", "04:00 PM"], // Mon
+                2: ["10:00 AM", "12:00 PM", "03:00 PM"],             // Tue
+                3: ["09:00 AM", "11:30 AM", "02:30 PM", "05:00 PM"], // Wed
+                4: ["10:00 AM", "01:00 PM", "04:00 PM"],             // Thu
+                5: ["09:00 AM", "12:00 PM"],                         // Fri
+            };
+
+            function renderCalendar() {
+                calendarContainer.innerHTML = ''; // Clear previous state
+
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+
+                const header = document.createElement('div');
+                header.className = 'flex justify-between items-center mb-4';
+                header.innerHTML = `
+                    <button id="prev-month" class="p-2 rounded-full hover:bg-brand-gray-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <h3 class="font-serif text-xl font-bold text-navy-900">${currentDate.toLocaleString('default', { month: 'long', year: 'numeric' })}</h3>
+                    <button id="next-month" class="p-2 rounded-full hover:bg-brand-gray-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                `;
+                calendarContainer.appendChild(header);
+
+                const grid = document.createElement('div');
+                grid.className = 'grid grid-cols-7 gap-1 text-center text-sm';
+                
+                // Day headers
+                ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+                    grid.innerHTML += `<div class="font-semibold text-brand-gray-500">${day}</div>`;
+                });
+
+                const firstDayOfMonth = new Date(year, month, 1).getDay();
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+                for (let i = 0; i < firstDayOfMonth; i++) {
+                    grid.innerHTML += `<div></div>`;
+                }
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const cellDate = new Date(year, month, day);
+                    const dayOfWeek = cellDate.getDay();
+                    const isToday = cellDate.toDateString() === new Date().toDateString();
+                    const isPast = cellDate < new Date().setHours(0,0,0,0);
+                    const isAvailable = availableTimes.hasOwnProperty(dayOfWeek) && !isPast;
+                    
+                    let cellClasses = 'py-2 rounded-full cursor-pointer transition-colors';
+                    if (!isAvailable) {
+                        cellClasses += ' text-brand-gray-500/50 cursor-not-allowed';
+                    } else {
+                        cellClasses += ' hover:bg-navy-900 hover:text-white';
+                    }
+                    if (isToday) {
+                         cellClasses += ' font-bold';
+                    }
+                    if (selectedDate && cellDate.toDateString() === selectedDate.toDateString()) {
+                        cellClasses += ' bg-navy-900 text-white';
+                    }
+
+                    const cell = document.createElement('div');
+                    cell.className = cellClasses;
+                    cell.textContent = day;
+                    if (isAvailable) {
+                        cell.onclick = () => {
+                            selectedDate = cellDate;
+                            renderCalendar(); // Re-render to show selection
+                            renderTimeSlots();
+                        };
+                    }
+                    grid.appendChild(cell);
+                }
+
+                calendarContainer.appendChild(grid);
+
+                document.getElementById('prev-month').onclick = () => {
+                    currentDate.setMonth(currentDate.getMonth() - 1);
+                    selectedDate = null;
+                    selectedTime = null;
+                    renderCalendar();
+                };
+                document.getElementById('next-month').onclick = () => {
+                    currentDate.setMonth(currentDate.getMonth() + 1);
+                    selectedDate = null;
+                    selectedTime = null;
+                    renderCalendar();
+                };
+            }
+            
+            function renderTimeSlots() {
+                let timeSlotsDiv = document.getElementById('time-slots-section');
+                if (!timeSlotsDiv) {
+                    timeSlotsDiv = document.createElement('div');
+                    timeSlotsDiv.id = 'time-slots-section';
+                    timeSlotsDiv.className = 'mt-6 border-t border-brand-gray-200 pt-6';
+                    calendarContainer.appendChild(timeSlotsDiv);
+                }
+                
+                if (!selectedDate) {
+                    timeSlotsDiv.innerHTML = '';
+                    return;
+                }
+                
+                const dayOfWeek = selectedDate.getDay();
+                const times = availableTimes[dayOfWeek] || [];
+                
+                let slotsHTML = `<h3 class="font-serif text-lg font-bold text-navy-900 mb-4">Available Times for ${selectedDate.toLocaleDateString('default', { month: 'long', day: 'numeric' })}</h3>`;
+                if(times.length > 0) {
+                    slotsHTML += '<div class="grid grid-cols-2 md:grid-cols-3 gap-2">';
+                    times.forEach(time => {
+                        const isSelected = time === selectedTime;
+                        slotsHTML += `<button class="time-slot-btn text-sm py-2 px-3 rounded-md border ${isSelected ? 'bg-navy-900 text-white border-navy-900' : 'bg-white border-brand-gray-200 hover:border-navy-900'}" data-time="${time}">${time}</button>`;
+                    });
+                    slotsHTML += '</div>';
+                } else {
+                    slotsHTML += '<p class="text-brand-gray-500">No available times for this day.</p>';
+                }
+
+                timeSlotsDiv.innerHTML = slotsHTML;
+                 
+                // Clear confirmation if a new date is selected
+                let confirmationDiv = document.getElementById('confirmation-section');
+                if (confirmationDiv) confirmationDiv.innerHTML = '';
+            }
+
+            function renderConfirmation() {
+                 let confirmationDiv = document.getElementById('confirmation-section');
+                 if (!confirmationDiv) {
+                     confirmationDiv = document.createElement('div');
+                     confirmationDiv.id = 'confirmation-section';
+                     calendarContainer.appendChild(confirmationDiv);
+                 }
+                 
+                 if (!selectedDate || !selectedTime) {
+                     confirmationDiv.innerHTML = '';
+                     return;
+                 }
+                 
+                 confirmationDiv.innerHTML = `
+                    <div class="mt-6 border-t border-brand-gray-200 pt-6 bg-navy-900/5 p-4 rounded-lg">
+                        <h3 class="font-serif text-lg font-bold text-navy-900">Confirm Your Booking</h3>
+                        <p class="mt-2 text-sm text-brand-gray-700"><strong>Name:</strong> ${document.getElementById('form-name').value || 'N/A'}</p>
+                        <p class="text-sm text-brand-gray-700"><strong>Email:</strong> ${document.getElementById('form-email').value || 'N/A'}</p>
+                        <p class="text-sm text-brand-gray-700"><strong>When:</strong> ${selectedDate.toLocaleDateString('default', { month: 'long', day: 'numeric' })} at ${selectedTime}</p>
+                        <button id="confirm-booking-btn" class="mt-4 w-full bg-navy-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-navy-800">Confirm Discovery Call</button>
+                    </div>
+                 `;
+            }
+            
+            calendarContainer.addEventListener('click', function(e) {
+                if(e.target.classList.contains('time-slot-btn')) {
+                    selectedTime = e.target.dataset.time;
+                    renderTimeSlots(); // Re-render to show selection
+                    renderConfirmation();
+                }
+                if(e.target.id === 'confirm-booking-btn') {
+                    alert('Booking confirmed!');
+                    selectedDate = null;
+                    selectedTime = null;
+                    renderCalendar();
+                }
+            });
+
+            // Initial render
+            renderCalendar();
+        });
+    </script>
+</body>
+</html>

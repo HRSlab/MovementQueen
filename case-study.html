@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    },
+                     typography: ({ theme }) => ({
+                        DEFAULT: {
+                            css: {
+                                '--tw-prose-body': theme('colors.brand-gray[700]'),
+                                '--tw-prose-headings': theme('colors.navy[900]'),
+                                '--tw-prose-lead': theme('colors.brand-gray[900]'),
+                                '--tw-prose-links': theme('colors.navy[800]'),
+                                '--tw-prose-bold': theme('colors.brand-gray[900]'),
+                                '--tw-prose-counters': theme('colors.brand-gray[500]'),
+                                '--tw-prose-bullets': theme('colors.brand-gray[500]'),
+                                '--tw-prose-hr': theme('colors.brand-gray[200]'),
+                                '--tw-prose-quotes': theme('colors.navy[900]'),
+                                '--tw-prose-quote-borders': theme('colors.navy[800]'),
+                                h1: { fontFamily: theme('fontFamily.serif')},
+                                h2: { fontFamily: theme('fontFamily.serif')},
+                                h3: { fontFamily: theme('fontFamily.serif')},
+                            },
+                        },
+                    }),
+                }
+            },
+            plugins: [
+                require('@tailwindcss/typography'),
+            ],
+        }
+    </script>
+</head>
+<body class="bg-white font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-navy-900 font-semibold">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === ARTICLE SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                    <!-- Main Article Content -->
+                    <article class="lg:col-span-8">
+                        <div class="max-w-prose mx-auto">
+                            <!-- Post Header -->
+                            <div class="mb-8">
+                                <p class="text-sm font-semibold text-navy-800 uppercase">Case Study</p>
+                                <h1 class="mt-2 block text-4xl md:text-5xl font-bold font-serif text-navy-900">From Desk-Bound to Hiking Pain-Free</h1>
+                                <p class="mt-4 text-brand-gray-500">A Client's Journey with the 1:1 Elite Transformation Program</p>
+                            </div>
+                            <!-- Post Body -->
+                            <div class="prose prose-lg max-w-none">
+                                <p class="lead">This case study follows "David," a 45-year-old software developer who came to me with chronic shoulder and neck pain after years of being tied to his desk. His goal was simple but felt impossible: he wanted to go on a multi-day hiking trip without pain.</p>
+                                
+                                <img src="https://placehold.co/800x500/e9ecef/343a40?text=Client+Journey" class="rounded-xl my-8" alt="Client performing a mobility exercise">
+
+                                <h3>The Challenge: A Cycle of Pain and Inactivity</h3>
+                                <p>David was caught in a classic cycle. His long hours at the computer led to poor posture and muscle imbalances. The resulting shoulder pain made him avoid physical activity, which in turn caused more stiffness and weakness. He had tried generic stretching routines and even physical therapy, but the relief was always temporary because the root cause—how he moved (and didn't move) every single day—wasn't being addressed.</p>
+                                
+                                <blockquote>"I felt like my body was working against me. Every time I tried to get active, the pain would flare up, and I'd be back at square one. I was frustrated and losing hope."</blockquote>
+
+                                <h3>The Solution: A Bespoke Movement-Centered Plan</h3>
+                                <p>Our approach in the 1:1 Elite Program was holistic and built on three phases over six months:</p>
+                                <ol>
+                                    <li><strong>Phase 1: Re-establishing a Foundation (Months 1-2):</strong> We didn't start with heavy lifting. Instead, we focused on neuro-centric drills to calm his nervous system and improve his mind-body connection. We introduced daily mindful movement "snacks" to break up his workday and began correcting postural habits with targeted mobility work for his thoracic spine and shoulders.</li>
+                                    <li><strong>Phase 2: Building Functional Strength (Months 3-4):</strong> Once David had better awareness and pain-free range of motion, we started building strength—not with isolated exercises, but with integrated, functional patterns that mimicked real-life activities. We focused on strengthening his back, core, and glutes to provide the support his upper body was lacking.</li>
+                                    <li><strong>Phase 3: Performance and Resilience (Months 5-6):</strong> In the final phase, we tailored his training to specifically prepare him for the demands of hiking. This included carrying a weighted pack, practicing on uneven surfaces, and building the endurance needed for long days on the trail. We ensured his body was not just pain-free, but resilient.</li>
+                                </ol>
+
+                                <h3>The Result: Summiting a Mountain and a New Lifestyle</h3>
+                                <p>After six months, David successfully completed his 4-day hiking trip with only minor muscle soreness, not the debilitating shoulder pain he feared. More importantly, his transformation went beyond the trail. He reported lower stress levels, higher energy at work, and a new confidence in his body's ability to heal and perform.</p>
+                                <p>He no longer sees movement as a chore or a source of pain, but as an integral part of his well-being—the true embodiment of the Movement Queen philosophy.</p>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Sidebar -->
+                    <aside class="lg:col-span-4">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="bg-brand-gray-100 p-6 rounded-xl">
+                                <h3 class="font-serif text-xl font-bold text-navy-900">Could this be you?</h3>
+                                <p class="mt-2 text-sm text-brand-gray-700">If David's story resonates with you, it's time to start your own transformation. A complimentary discovery call is the first step.</p>
+                                <a href="contact.html" class="mt-4 w-full text-center bg-navy-900 text-white font-semibold py-3 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 block">Book Your Free Call</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

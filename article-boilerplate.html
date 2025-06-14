@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    },
+                     typography: ({ theme }) => ({
+                        DEFAULT: {
+                            css: {
+                                '--tw-prose-body': theme('colors.brand-gray[700]'),
+                                '--tw-prose-headings': theme('colors.navy[900]'),
+                                '--tw-prose-lead': theme('colors.brand-gray[900]'),
+                                '--tw-prose-links': theme('colors.navy[800]'),
+                                '--tw-prose-bold': theme('colors.brand-gray[900]'),
+                                '--tw-prose-counters': theme('colors.brand-gray[500]'),
+                                '--tw-prose-bullets': theme('colors.brand-gray[500]'),
+                                '--tw-prose-hr': theme('colors.brand-gray[200]'),
+                                '--tw-prose-quotes': theme('colors.navy[900]'),
+                                '--tw-prose-quote-borders': theme('colors.navy[800]'),
+                                h1: { fontFamily: theme('fontFamily.serif')},
+                                h2: { fontFamily: theme('fontFamily.serif')},
+                                h3: { fontFamily: theme('fontFamily.serif')},
+                            },
+                        },
+                    }),
+                }
+            },
+            plugins: [
+                require('@tailwindcss/typography'),
+            ],
+        }
+    </script>
+</head>
+<body class="bg-white font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-navy-900 font-semibold">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === ARTICLE SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                    <!-- Main Article Content -->
+                    <article class="lg:col-span-8">
+                        <div class="max-w-prose mx-auto">
+                            <!-- Post Header -->
+                            <div class="mb-8">
+                                <p class="text-sm font-semibold text-navy-800 uppercase">Mindfulness</p>
+                                <h1 class="mt-2 block text-4xl md:text-5xl font-bold font-serif text-navy-900">The 5-Minute Mindful Movement Break to Calm Your Nervous System</h1>
+                                <p class="mt-4 text-brand-gray-500">Posted on May 28, 2025 by Tina Davis</p>
+                            </div>
+                            <!-- Post Body -->
+                            <div class="prose prose-lg max-w-none">
+                                <p class="lead">In our fast-paced world, stress can feel constant. This simple, 5-minute routine is designed to interrupt that cycle, helping you reconnect with your body and calm your nervous system, right at your desk.</p>
+                                
+                                <img src="https://placehold.co/800x500/e9ecef/343a40?text=Mindful+Movement" class="rounded-xl my-8" alt="Person doing a mindful stretch">
+
+                                <h3>The Power of a Micro-Break</h3>
+                                <p>You don't need an hour at the gym to make a difference. A "micro-break" is a powerful tool to reset your focus and release physical tension before it builds up. The key is mindfulness: paying full attention to the sensation of each movement.</p>
+                                
+                                <h3>Your 5-Minute Routine</h3>
+                                <p>Find a space where you can stand or sit comfortably. Perform each movement slowly and intentionally.</p>
+                                <ol>
+                                    <li><strong>Seated Cat-Cow (1 Minute):</strong> While sitting, place your hands on your knees. As you inhale, arch your back and look up. As you exhale, round your spine and drop your chin to your chest. Feel the movement through your entire spine.</li>
+                                    <li><strong>Neck Rolls (1 Minute):</strong> Gently drop your right ear toward your right shoulder. Hold for a breath, then slowly roll your chin down to your chest and over to the left side. Repeat, moving with your breath.</li>
+                                    <li><strong>Shoulder Shrugs & Rolls (1 Minute):</strong> Inhale and lift your shoulders up toward your ears. Hold for a second, then exhale and let them drop completely. Follow with five slow shoulder rolls backward, then five forward.</li>
+                                    <li><strong>Wrist & Ankle Circles (1 Minute):</strong> Extend your arms and legs. Gently rotate your wrists and ankles in circles, first one way, then the other. Notice the sensation in these often-neglected joints.</li>
+                                    <li><strong>Mindful Breath (1 Minute):</strong> Close your eyes. Place one hand on your belly. Take a slow, deep breath in, feeling your belly expand. Exhale slowly, feeling it fall. Simply focus on the rhythm of your breath.</li>
+                                </ol>
+
+                                <blockquote>"This isn't about achieving a perfect pose; it's about giving yourself a moment of conscious presence. It's a small act of self-care that can change the entire trajectory of your day."</blockquote>
+                                
+                                <p>Try incorporating this break into your workday. Set a timer if you need to. Notice how you feel afterward—calmer, more focused, and more at home in your body. This is the foundation of mindful movement.</p>
+
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Sidebar -->
+                    <aside class="lg:col-span-4">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="bg-brand-gray-100 p-6 rounded-xl">
+                                <h3 class="font-serif text-xl font-bold text-navy-900">Ready to Go Deeper?</h3>
+                                <p class="mt-2 text-sm text-brand-gray-700">If this small taste of mindfulness resonates with you, imagine what a fully personalized program could do. Let's talk.</p>
+                                <a href="contact.html" class="mt-4 w-full text-center bg-navy-900 text-white font-semibold py-3 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 block">Book Your Free Call</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

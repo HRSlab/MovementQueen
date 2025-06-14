@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Post | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    },
+                     typography: ({ theme }) => ({
+                        DEFAULT: {
+                            css: {
+                                '--tw-prose-body': theme('colors.brand-gray[700]'),
+                                '--tw-prose-headings': theme('colors.navy[900]'),
+                                '--tw-prose-lead': theme('colors.brand-gray[900]'),
+                                '--tw-prose-links': theme('colors.navy[800]'),
+                                '--tw-prose-bold': theme('colors.brand-gray[900]'),
+                                '--tw-prose-counters': theme('colors.brand-gray[500]'),
+                                '--tw-prose-bullets': theme('colors.brand-gray[500]'),
+                                '--tw-prose-hr': theme('colors.brand-gray[200]'),
+                                '--tw-prose-quotes': theme('colors.navy[900]'),
+                                '--tw-prose-quote-borders': theme('colors.navy[800]'),
+                                h1: { fontFamily: theme('fontFamily.serif')},
+                                h2: { fontFamily: theme('fontFamily.serif')},
+                                h3: { fontFamily: theme('fontFamily.serif')},
+                            },
+                        },
+                    }),
+                }
+            },
+            plugins: [
+                require('@tailwindcss/typography'),
+            ],
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-100 font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-navy-900 font-semibold">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === ARTICLE SECTION === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                    <!-- Main Article Content -->
+                    <article class="lg:col-span-8">
+                        <div class="max-w-prose mx-auto">
+                            <!-- Post Header -->
+                            <div class="mb-8">
+                                <p class="text-sm font-semibold text-navy-800 uppercase">Pain Relief</p>
+                                <h1 class="mt-2 block text-4xl md:text-5xl font-bold font-serif text-navy-900">Why 'Stretching' Isn't The Answer For Your Tight Hips</h1>
+                                <p class="mt-4 text-brand-gray-500">Posted on June 10, 2025 by Tina Davis</p>
+                            </div>
+                            <!-- Post Body -->
+                            <div class="prose prose-lg max-w-none">
+                                <p class="lead">Most of us have been taught to stretch when we feel tightness. It's an almost instinctual reaction. But what if that's not the best solution for chronic tightness, especially in our hips? What if the feeling of "tightness" isn't a problem with the muscle itself, but a signal from our nervous system?</p>
+                                <p>In my practice, we explore the idea that chronic muscle tension is often a protective response. Your brain perceives a lack of stability or control in a certain range of motion, and in response, it "puts on the brakes" by creating tension. This is a brilliant safety mechanism, but endlessly stretching into that tension can sometimes feel like fighting against your own body's wisdom.</p>
+                                <h3>The Neurological Perspective</h3>
+                                <p>Instead of thinking of muscles as simple rubber bands, we view them as being under the constant control of your nervous system. From this perspective, creating lasting mobility isn't about forcing a muscle to lengthen; it's about convincing your nervous system that it's safe to allow more movement.</p>
+                                <ul>
+                                    <li><strong>Active Mobility Drills:</strong> Instead of passive holds, we use active movements to teach your nervous system to control new ranges of motion.</li>
+                                    <li><strong>Strengthening at End-Ranges:</strong> By building strength in the very positions where you feel "tight," you prove to your brain that you are safe and stable there.</li>
+                                    <li><strong>Mindful Body Awareness:</strong> We focus on feeling and understanding the signals your body is sending, rather than just trying to silence them with stretching.</li>
+                               </ul>
+                                <p>The next time you feel that familiar tightness in your hips, I invite you to pause. Instead of immediately pulling on it, ask yourself: what is my body trying to tell me? Perhaps the answer isn't more flexibility, but more strength, more control, and more mindful awareness.</p>
+                            </div>
+                            
+                            <!-- Author Box -->
+                             <div class="mt-12 pt-8 border-t border-brand-gray-200 flex items-center">
+                                <img src="https://placehold.co/150x150/e9ecef/343a40?text=Tina" class="rounded-full w-20 h-20" alt="Tina Davis">
+                                <div class="ml-4">
+                                    <h4 class="font-serif text-xl font-bold">About Tina Davis</h4>
+                                    <p class="text-sm text-brand-gray-700">Tina is the founder of The Movement Queen, dedicated to helping people find freedom and strength through a mindful, intelligent approach to movement. <a href="about.html" class="text-navy-800 font-semibold">Learn more about her journey.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Sidebar -->
+                    <aside class="lg:col-span-4">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="bg-brand-gray-100 p-6 rounded-xl">
+                                <h3 class="font-serif text-xl font-bold text-navy-900">Ready to Begin Your Transformation?</h3>
+                                <p class="mt-2 text-sm text-brand-gray-700">If this philosophy resonates with you, take the first step. A complimentary discovery call is the perfect place to start.</p>
+                                <a href="contact.html" class="mt-4 w-full text-center bg-navy-900 text-white font-semibold py-3 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 block">Book Your Free Call</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

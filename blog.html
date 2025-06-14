@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movement Musings Blog | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-100 font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-navy-900 font-semibold">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === PAGE HEADER === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-navy-900">Movement Musings</h1>
+                    <p class="mt-4 text-lg text-brand-gray-700">High-value articles, guides, and case studies to support your journey and deepen your understanding of the movement philosophy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- === BLOG SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Main Content -->
+                    <div class="lg:col-span-8">
+                        <div class="space-y-12">
+                            <!-- Blog Post Card -->
+                            <article class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                                <p class="text-sm text-brand-gray-500">Pain Relief | June 10, 2025</p>
+                                <a href="blog-post.html"><h2 class="mt-2 font-serif text-3xl font-bold text-navy-900 hover:text-navy-800 transition-colors">Why 'Stretching' Isn't The Answer For Your Tight Hips</h2></a>
+                                <p class="mt-4 text-brand-gray-700">Most of us have been taught to stretch when we feel tight, but what if that's not the best solution? This article explores the neurological reasons for muscle tightness and gives you practical, effective strategies to improve mobility and find lasting relief.</p>
+                                <a href="blog-post.html" class="mt-4 inline-block font-semibold text-navy-900 hover:text-navy-800">Read More &rarr;</a>
+                            </article>
+                             <!-- Blog Post Card -->
+                            <article class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                                <p class="text-sm text-brand-gray-500">Mindfulness | May 28, 2025</p>
+                                <a href="article-boilerplate.html"><h2 class="mt-2 font-serif text-3xl font-bold text-navy-900 hover:text-navy-800 transition-colors">The 5-Minute Mindful Movement Break to Calm Your Nervous System</h2></a>
+                                <p class="mt-4 text-brand-gray-700">A simple, powerful technique for managing stress during a busy workday. Learn how to reconnect with your body and reset your mind in just five minutes.</p>
+                                <a href="article-boilerplate.html" class="mt-4 inline-block font-semibold text-navy-900 hover:text-navy-800">Read More &rarr;</a>
+                            </article>
+                             <!-- Blog Post Card -->
+                            <article class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                                <p class="text-sm text-brand-gray-500">Success Stories | May 15, 2025</p>
+                                <a href="case-study.html"><h2 class="mt-2 font-serif text-3xl font-bold text-navy-900 hover:text-navy-800 transition-colors">Case Study: From Desk-Bound to Hiking Pain-Free</h2></a>
+                                <p class="mt-4 text-brand-gray-700">An anonymized look at how we resolved a client's chronic shoulder pain and restored function, allowing them to return to the activities they love.</p>
+                                <a href="case-study.html" class="mt-4 inline-block font-semibold text-navy-900 hover:text-navy-800">Read More &rarr;</a>
+                            </article>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="mt-12 flex justify-center space-x-2">
+                            <span class="px-4 py-2 bg-navy-900 text-white rounded-md">1</span>
+                            <a href="#" class="px-4 py-2 bg-white border border-brand-gray-200 rounded-md hover:bg-brand-gray-200">2</a>
+                            <a href="#" class="px-4 py-2 bg-white border border-brand-gray-200 rounded-md hover:bg-brand-gray-200">3</a>
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <aside class="lg:col-span-4">
+                        <div class="sticky top-28 space-y-8">
+                            <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gray-200/80">
+                                <h3 class="font-serif text-xl font-bold text-navy-900">About the Author</h3>
+                                <img src="https://placehold.co/150x150/e9ecef/343a40?text=Tina" class="rounded-full w-24 h-24 mx-auto mt-4" alt="Tina Davis">
+                                <p class="mt-4 text-center text-brand-gray-700"><strong>Tina Davis</strong> is a personal trainer, life coach, and founder of The Movement Queen philosophy, dedicated to helping people find freedom through mindful movement.</p>
+                            </div>
+                             <div class="bg-white p-6 rounded-xl shadow-sm border border-brand-gray-200/80">
+                                <h3 class="font-serif text-xl font-bold text-navy-900">Categories</h3>
+                                <ul class="mt-4 space-y-2">
+                                    <li><a href="#" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Pain Relief</a></li>
+                                    <li><a href="#" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Mindfulness</a></li>
+                                    <li><a href="#" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Functional Strength</a></li>
+                                    <li><a href="#" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

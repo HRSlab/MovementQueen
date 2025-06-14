@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Movement Queen | Homepage</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-100 font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Success Stories</a></li>
+                <li><a href="blog.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === HERO SECTION === -->
+        <section class="bg-brand-gray-200/60">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h1 class="font-serif text-4xl md:text-6xl font-bold text-navy-900">Your Movement is Your Medicine</h1>
+                <p class="mt-4 text-lg md:text-xl text-brand-gray-700 max-w-3xl mx-auto">A unique movement-centered philosophy to help you overcome feeling stuck, reclaim your strength, and live a more vibrant, fulfilling life.</p>
+                <div class="mt-8 flex justify-center items-center space-x-4">
+                    <a href="contact.html" class="bg-navy-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Discovery Call</a>
+                    <a href="philosophy.html" class="border-2 border-navy-900 text-navy-900 font-semibold py-3 px-8 rounded-full hover:bg-navy-900 hover:text-white transition-all duration-300">Explore The Philosophy</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- === INTRODUCTION SECTION === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900">Go Beyond Generic Fitness. Embrace a Movement Lifestyle.</h2>
+                    <p class="mt-4 text-brand-gray-700">Conventional fitness often fails us, leading to burnout, injury, or frustration. My approach is different. It's a holistic system designed to integrate mindful movement into your life, helping you build not just physical strength, but profound inner resilience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- === WHO IT'S FOR SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                 <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900">Personalized Coaching for a Deeper Transformation</h2>
+                    <p class="mt-4 text-brand-gray-700">This philosophy is for those who seek more than just a workout—it's for those who want to understand their bodies, reduce stress, and build lasting, joyful health.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                        <h3 class="font-serif text-2xl font-bold text-navy-900">For the Busy Professional</h3>
+                        <p class="mt-2 text-brand-gray-700">You're driven and successful, but stressed and disconnected from your body. You need an efficient, intelligent way to alleviate pain from desk work, boost your energy, and build mental resilience, not just burn calories.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                        <h3 class="font-serif text-2xl font-bold text-navy-900">For the Holistic Seeker</h3>
+                        <p class="mt-2 text-brand-gray-700">You value well-being for your mind, body, and spirit. You're tired of diet culture and punishing routines. You're looking for a mindful, intuitive approach to reconnect with your body and find joy in movement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === TESTIMONIAL PREVIEW SECTION === -->
+        <section class="bg-white">
+             <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <blockquote class="text-xl md:text-2xl font-serif italic text-navy-900">
+                        "After years of chronic back pain and trying everything, Tina's approach was the only thing that brought lasting relief. It's not an exaggeration to say it changed my life."
+                    </blockquote>
+                    <cite class="mt-4 block font-semibold text-brand-gray-900 not-italic">— Michael B., Client</cite>
+                    <a href="testimonials.html" class="mt-8 inline-block border-2 border-navy-900 text-navy-900 font-semibold py-2 px-6 rounded-full hover:bg-navy-900 hover:text-white transition-all duration-300">See More Success Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- === CTA SECTION === -->
+        <section>
+             <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900">Find Your Path to Transformation</h2>
+                    <p class="mt-4 text-brand-gray-700">From foundational programs to elite 1:1 coaching, there is a path designed to provide the exact support and personalization you need to thrive.</p>
+                    <a href="services.html" class="mt-8 inline-block bg-navy-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Explore All Programs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

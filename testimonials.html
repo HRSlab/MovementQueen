@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Stories | The Movement Queen</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Work Sans', 'sans-serif'],
+                        'serif': ['Tinos', 'serif'],
+                    },
+                    colors: {
+                        'navy': {
+                            '900': '#003366',
+                            '800': '#004080',
+                        },
+                        'brand-gray': {
+                            '100': '#f8f9fa',
+                            '200': '#e9ecef',
+                            '500': '#6c757d',
+                            '700': '#495057',
+                            '900': '#212529',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray-100 font-sans antialiased">
+
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="font-serif text-2xl font-bold text-navy-900">The Movement Queen</a>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="about.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">About Tina</a></li>
+                <li><a href="services.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Programs</a></li>
+                <li><a href="philosophy.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Philosophy</a></li>
+                <li><a href="testimonials.html" class="text-navy-900 font-semibold">Success Stories</a></li>
+                <li><a href="blog.html" class="text-brand-gray-700 hover:text-navy-900 transition-colors">Blog</a></li>
+                <li><a href="contact.html" class="bg-navy-900 text-white font-semibold py-2 px-6 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Book a Consultation</a></li>
+            </ul>
+            <!-- Mobile Menu Button (placeholder) -->
+            <div class="md:hidden">
+                <button class="text-brand-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- === PAGE HEADER === -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-navy-900">Real Movement, Real Results</h1>
+                    <p class="mt-4 text-lg text-brand-gray-700">Hear from clients who have transformed their lives by embracing a new relationship with movement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- === TESTIMONIALS SECTION === -->
+        <section>
+            <div class="container mx-auto px-6 py-16">
+                <!-- Main Video Testimonial -->
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="aspect-w-16 aspect-h-9">
+                         <img src="https://placehold.co/800x450/cad4e2/003366?text=Video" class="w-full h-full object-cover rounded-xl shadow-lg" alt="Video testimonial placeholder">
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-3xl font-bold text-navy-900">"I feel stronger than ever, inside and out."</h2>
+                        <blockquote class="mt-4 border-l-4 border-navy-900 pl-4 italic text-brand-gray-700">
+                            "I went from feeling weak and stuck to feeling stronger than I ever thought possible. It wasn't just about physical strength; my confidence grew, and my mindset completely shifted. Tina's approach changed everything."
+                        </blockquote>
+                        <cite class="mt-4 block font-semibold text-brand-gray-900 not-italic">— Liana, Client</cite>
+                    </div>
+                </div>
+
+                <!-- Written Testimonials Grid -->
+                <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                        <blockquote class="text-lg italic text-brand-gray-700">"After years of chronic back pain, this was the only thing that brought lasting relief. It's not an exaggeration to say it changed my life."</blockquote>
+                        <cite class="mt-4 block font-semibold text-right text-brand-gray-900 not-italic">— Michael B.</cite>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                        <blockquote class="text-lg italic text-brand-gray-700">"I thought I was 'fit', but I was just exhausted. Tina taught me how to move with intention. My stress has plummeted and my energy is through the roof."</blockquote>
+                        <cite class="mt-4 block font-semibold text-right text-brand-gray-900 not-italic">— Samantha J.</cite>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-brand-gray-200/80">
+                        <blockquote class="text-lg italic text-brand-gray-700">"This is the first time I've felt truly at home in my body. The focus isn't on how you look, but how you feel and function. It's incredibly empowering."</blockquote>
+                        <cite class="mt-4 block font-semibold text-right text-brand-gray-900 not-italic">— Jessica L.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === CTA SECTION === -->
+        <section class="bg-brand-gray-200/60">
+             <div class="container mx-auto px-6 py-16 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900">Ready to Write Your Own Success Story?</h2>
+                    <p class="mt-4 text-brand-gray-700">Your transformation begins with a single step. A complimentary discovery call is the perfect place to start.</p>
+                    <a href="contact.html" class="mt-8 inline-block bg-navy-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-navy-800 transition-all duration-300 transform hover:scale-105">Begin Your Journey Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-gray-900 text-brand-gray-200">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-white">The Movement Queen</h3>
+                    <p class="mt-2 text-brand-gray-500">Transforming lives through mindful, intelligent movement.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="text-brand-gray-500 hover:text-white transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-brand-gray-500 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="blog.html" class="text-brand-gray-500 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-brand-gray-500 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white">Connect</h4>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-brand-gray-500 hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-brand-gray-700 pt-8 text-center text-brand-gray-500">
+               <p class="text-sm">&copy; 2025 The Movement Queen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
