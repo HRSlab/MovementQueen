@@ -144,6 +144,20 @@
             </div>
         </div>
     </footer>
+<!-- === JAVASCRIPT FOR MOBILE MENU === -->
+<!-- Add this block to the bottom of every HTML page, just before </body> -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
